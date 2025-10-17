@@ -12,7 +12,7 @@
 
 <div class="w-full h-full flex justify-center">
 	<article class="flex flex-col-reverse gap-4 lg:gap-2 lg:flex-row">
-		<div class="prose w-full">
+		<div class="prose tw-full">
 			<data.content />
 		</div>
 		<hgroup class="lg:w-40 text-right text-lg flex justify-end">
