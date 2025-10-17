@@ -10,33 +10,36 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="max-w-3xl mx-auto">
-	<hgroup>
-		<h1 class="capitalize">{data.meta.title}</h1>
-		<p class="mt-2 text-gray-500">Published at {formatDate(data.meta.date)}</p>
-	</hgroup>
-
-	<div class="flex gap-3 mt-7">
-		{#each data.meta.categories as category}
-			<span class="px-2 py-1 rounded-full bg-gray-200 text-gray-700">&num;{category}</span>
-		{/each}
-	</div>
-
-	<div class="prose">
-		<data.content />
-	</div>
-</article>
+<div class="w-full h-full flex justify-center">
+	<article class="flex flex-col-reverse gap-4 lg:gap-2 lg:flex-row">
+		<div class="prose w-full">
+			<data.content />
+		</div>
+		<hgroup class="lg:w-40 text-right text-lg flex justify-end">
+			<div class="fixed lg:w-40">
+				<h1 class="capitalize">{data.meta.title}</h1>
+				<p class="mt-2 text-gray-500">{formatDate(data.meta.date)}</p>
+			</div>
+		</hgroup>
+	</article>
+</div>
 
 <style>
 	.prose :is(h2, h3, h4, h5, h6) {
 		@apply mt-8 mb-3;
 	}
+	.prose :is(p) {
+		@apply text-lg;
+	}
 	.prose :is(ul, ol) {
-		list-style-type: '🔥';
 		@apply pl-5;
 	}
 	.prose :is(ul, ol) li {
 		@apply my-2 pl-2;
+	}
+
+	.prose :is(a) {
+		@apply text-[#0000FF] underline decoration-2 underline-offset-2;
 	}
 	.prose pre {
 		max-inline-size: 100%;

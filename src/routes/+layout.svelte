@@ -11,25 +11,20 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class=" w-screen h-screen flex">
-	<main class="relative w-1/3 h-full border-r-2 overflow-y-auto flex flex-col text-lg">
+<div class="w-screen h-screen lg:flex">
+	<main
+		class="hidden lg:flex lg:relative w-1/3 max-w-md h-full border-r-2 overflow-y-auto flex-col text-lg"
+	>
 		<div class="w-full pb-[1px] border-b-2">
 			<div class="w-full p-10 border-b-2">
 				<a href="/" class="text-[#0000FF] underline decoration-2 underline-offset-2"
-					>mythologizer.org</a
+					>Mythologizer.org</a
 				>
 			</div>
 		</div>
 		<p></p>
 		<div class="flex-col p-10 flex gap-4 pb-20 h-full overflow-y-auto">
 			{#each data.posts as post, i}
-				<PostCard {...post} />
-				<PostCard {...post} />
-				<PostCard {...post} />
-				<PostCard {...post} />
-				<PostCard {...post} />
-				<PostCard {...post} />
-				<PostCard {...post} />
 				<PostCard {...post} />
 			{/each}
 		</div>
@@ -47,11 +42,30 @@
 			</div>
 		</ul>
 	</main>
-	<div class="h-full w-[4px] border-r-2"></div>
-	<section class=" w-full h-full overflow-y-auto p-10">{@render children?.()}</section>
-</div>
+	<div class="hidden lg:flex h-full w-[4px] border-r-2"></div>
 
-<section></section>
+	<section class="top-8 lg:top-0 w-full h-full overflow-y-auto p-6 lg:p-10">
+		<nav class="lg:hidden flex w-full text-2xl pb-2">
+			<ul class="flex flex-col gap-2 w-full justify-between">
+				<li class="">
+					<a href="/" class="text-[#0000FF] underline decoration-2 underline-offset-2"
+						>Mythologizer.org</a
+					>
+				</li>
+				<li class="">
+					<a href="/about" class="text-[#0000FF] underline decoration-2 underline-offset-2">About</a
+					>
+				</li>
+				<li class="">
+					<a href="/impressum" class="text-[#0000FF] underline decoration-2 underline-offset-2"
+						>Impressum</a
+					>
+				</li>
+			</ul>
+		</nav>
+		{@render children?.()}
+	</section>
+</div>
 
 <style>
 	:global(body) {

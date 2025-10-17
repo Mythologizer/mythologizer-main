@@ -6,28 +6,13 @@ date: '2025-9-20'
 published: true
 ---
 
-# H1
+# Ars Electronica 2025
 
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-Hey friends! 👋
-
-```ts
-function greet(name: string) {
-	console.log(`Hey ${name}! 👋`);
-}
-```
+[Ars Electronica](https://ars.electronica.art/) Is a festival for art, technology, and society in Linz, Austria. We exhibited our _MYTHOLOGIZER_ with an interactive interface for visitors to contribute to our simulation. They were able to create agents with specific characteristics, as well as cultures, to impact the evolution of the myths within the system.
 
 [Link to the project page on the Ars Electronica website](https://ars.electronica.art/keplersgardens/en/mythologizer/)
-[Link to the Mythologizer GitHub repository](https://ars.mythologizer.org)
 
-![Example Video Embeded](https://www.youtube.com/watch?v=J4v3bX6Hk0I)
+[Link to the Ars Mythologizer site](https://ars.mythologizer.org)
 
 ![Picture](./images/ars/image-0.jpg)
 ![Picture](./images/ars/image-1.jpg)

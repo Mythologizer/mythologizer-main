@@ -12,7 +12,7 @@
 
 <button onclick={() => gotoPost(slug)} class="border-2 p-[1px] cursor-pointer text-left">
 	<div class="w-full border-2 bg-white p-2 flex flex-col gap">
-		<p class="capitalize">{title}</p>
+		<p class="capitalize text-[#0000FF] underline decoration-2 underline-offset-2">{title}</p>
 		<p class="text-gray-500">{formatDate(date)}</p>
 		<p class="mt-2">{description}</p>
 	</div>
