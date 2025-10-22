@@ -1,14 +1,17 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
-	import { formatDate } from '$lib/utils';
+
 	import PostCard from '$lib/components/post/PostCard.svelte';
 
 	let { data, children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href="/assets/favicon.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+	<link rel="manifest" href="/assets/site.webmanifest" />
 </svelte:head>
 
 <div class="w-screen h-screen lg:flex">
