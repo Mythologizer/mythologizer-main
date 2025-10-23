@@ -31,7 +31,7 @@
 				<PostCard {...post} />
 			{/each}
 		</div>
-		<ul class="absolute bottom-0 z-10 bg-white w-full border-t-2 pt-[1px]">
+		<ul class="lg:absolute bottom-0 z-10 bg-white w-full border-t-2 pt-[1px]">
 			<div class="w-full h-full border-t-2 py-4 flex justify-evenly">
 				<li class="">
 					<a href="/about" class="text-[#0000FF] underline decoration-2 underline-offset-2">About</a
@@ -66,7 +66,9 @@
 				</li>
 			</ul>
 		</nav>
-		{@render children?.()}
+		<div class="w-full">
+			{@render children?.()}
+		</div>
 	</section>
 </div>
 

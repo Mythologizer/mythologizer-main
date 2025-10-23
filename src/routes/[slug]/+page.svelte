@@ -16,7 +16,7 @@
 			<data.content />
 		</div>
 		<hgroup class="lg:w-40 text-right text-lg flex justify-end">
-			<div class="fixed lg:w-40">
+			<div class=" lg:w-40">
 				<h1 class="capitalize">{data.meta.title}</h1>
 				<p class="mt-2 text-gray-500">{formatDate(data.meta.date)}</p>
 			</div>
