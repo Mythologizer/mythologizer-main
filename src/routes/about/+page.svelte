@@ -1,6 +1,6 @@
 <div class="flex w-full flex-col items-center text-2xl">
 	<div class="flex max-w-4xl flex-col gap-6 p-4">
-		<img src="./mythologizer.jpeg" alt="nice sunset" class="w-full contain-content" />
+		<img src="./images/banner.png" alt="nice sunset" class="w-full contain-content" />
 		<p class="wrap">
 			The Mythologizer is a modular and customizable research tool designed to simulate the
 			evolution of myths across diverse cultural frameworks. Contrary to the historical perspective
