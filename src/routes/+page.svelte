@@ -16,7 +16,7 @@
 			<PostCard {...post} />
 		{/each}
 	</div>
-	<div class="w-full lg:h-full flex items-center justify-center">
+	<div class="w-full lg:h-full flex items-center justify-center lg:p-0 pb-16 overflow-hidden">
 		<Venus />
 	</div>
 </div>
