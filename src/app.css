@@ -1,3 +1,15 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@layer base {
+	@font-face {
+		font-family: 'W95FA';
+		src: local('W95FA'), url('/W95FA.otf');
+		font-weight: normal;
+		font-display: swap;
+	}
+}
+body {
+	font-family: 'W95FA', sans-serif;
+}
