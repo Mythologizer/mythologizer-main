@@ -14,9 +14,10 @@ The installation features Austria's most famous archaeological find: the [Venus 
 
 [Ars Electronica website](https://ars.electronica.art/panic/en/view/bring-on-the-chaos-20e38ddb450c815c9775e7da7effd7f4/)
 they did not put us here :(  
-[The Mythologizer GitHub repository](https://ars.mythologizer.org)
+[The Mythologizer GitHub repository](https://github.com/Mythologizer)
 
 ![Video of the Mythologizer at Ars Electronica](https://youtu.be/jZB6Nj_xsQQ)
+<embed src="https://www.youtube.com/embed/jZB6Nj_xsQQ" width="auto" height="auto" frameborder="0" allowfullscreen></embed>
 
 ![Picture](./images/ars/image-0.jpg)
 ![Picture](./images/ars/image-1.jpg)
